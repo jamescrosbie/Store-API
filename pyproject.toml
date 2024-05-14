@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "stores-api"
+version = "0.1.0"
+description = "Flask API used to manage stores and items within stores"
+authors = ["James <crosbie13@outlook.com>"]
+readme = "README.md"
+packages = [{include = "stores_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+SQLAlchemy = "^2.0.20"
+Flask = "^2.3.2"
+marshmallow = "^3.20.1"
+python-dotenv = "^1.0.0"
+flask-smorest = "^0.42.1"
+flask-sqlalchemy = "^3.0.5"
+flask-migrate = "^4.0.5"
+flask-jwt-extended = "^4.6.0"
+passlib = "^1.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
