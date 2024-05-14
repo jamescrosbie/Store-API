@@ -1,5 +1,7 @@
 # Project specific
-.DB_Store
+.DS_Store
+managed_context/
+test_suite_analysis/
 
 #########################################
 
