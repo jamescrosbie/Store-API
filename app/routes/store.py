@@ -2,9 +2,9 @@ from flask.views import MethodView
 from flask_smorest import Blueprint, abort
 from sqlalchemy.exc import IntegrityError, SQLAlchemyError
 
+from app.db import db
 from app.models.models import StoreModel
 from app.schemas import StoreSchema
-from db import db
 
 blp = Blueprint("Stores", "stores", description="Operations on stores")
 

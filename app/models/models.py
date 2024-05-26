@@ -4,7 +4,7 @@ from typing import List
 from sqlalchemy import Float, ForeignKey, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from db import db
+from app.db import db
 
 
 class StoreModel(db.Model):

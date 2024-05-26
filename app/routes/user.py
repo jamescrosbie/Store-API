@@ -11,9 +11,9 @@ from flask_jwt_extended import (
 from flask_smorest import Blueprint, abort
 from passlib.hash import pbkdf2_sha256
 
+from app.db import db
 from app.models.models import Blocklist, UserModel
 from app.schemas import UserSchema
-from db import db
 
 blp = Blueprint("Users", "users", description="Operations on users")
 

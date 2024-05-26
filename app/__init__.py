@@ -2,13 +2,12 @@ from flask import Flask, jsonify
 from flask_jwt_extended import JWTManager
 from flask_smorest import Api
 
+# from app.resources.tag import blp as TagBlueprint
+from app.db import db
 from app.models.models import Blocklist
 from app.routes.item import blp as ItemBlueprint
 from app.routes.store import blp as StoreBlueprint
 from app.routes.user import blp as UserBlueprint
-
-# from app.resources.tag import blp as TagBlueprint
-from db import db
 
 
 def create_app():
