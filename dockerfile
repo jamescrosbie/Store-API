@@ -50,4 +50,5 @@ COPY .flaskenv stores_items.db /FLASK_API/
 EXPOSE 5000
 
 # Run the application
-CMD ["poetry", "run", "flask", "run", "--host=0.0.0.0"]
+# CMD ["poetry", "run", "flask", "run", "--host=0.0.0.0"]
+CMD ["poetry", "run", "gunicorn", "-w", "1", "-b", "0.0.0.0:5000", "app:create_app()"]
